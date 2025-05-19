@@ -6,12 +6,19 @@
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  --title-color: #4a4a4a;
+  /* --title-color: #4a4a4a;
   --text-color: #555;
   --text-color-alt: #999;
   --bg-color: #fff;
   --bg-color-alt: #e9ecef;
-  --border-color: #f1f1f1;
+  --border-color: #f1f1f1; */
+  --bg-black-900:#f2f2fc;
+  --bg-black-100:#fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+
+
 
   /*========== Font and typography ==========*/
   --roboto-font: 'Roboto', sans-serif;
@@ -34,60 +41,45 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+::before,::after
+{
+  box-sizing: border-box;
 }
 
-body,
-button,
-input,
-textarea {
-  font-family: var(--roboto-font);
-  font-size: var(--fs-base);
+.section
+{
+  background-color: var(--bg-black-900);
+  min-height: 100vh;
+  display: block;
+  position: fixed;
+  left: 270px;
+  top:0;
+  right: 0;
+  z-index: 0;
+  opacity: 1;
 }
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.5em;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--mono-font);
-  font-weight: var(--bold);
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-textarea,
-input {
-  background: none;
-  border: none;
-  outline: none;
+/* aside */
+.aside
+{
+  width: 270px;
+  background: var(--bg-black-100);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 10;
 }
 
 /*=============== Reusable Css ===============*/
