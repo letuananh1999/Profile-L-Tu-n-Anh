@@ -776,13 +776,54 @@ h3.my-profession
 /*=============== BreakPoints ===============*/
 /* for large devices */
 @media screen and (max-width: 1200px) {
+  .aside
+  {
+    left: -270px;
+  }
+  .main-content
+  {
+    padding-left: 0;
+  }
+  .about .about-content .personal-info .info-item p span
+  {
+    display: block;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .section .service-item
+  {
+    flex:  0 0 50%;
+    max-width: 50%;
+  }
+  .home .home-info
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home .home-img
+  {
+    display: none;
+  }
 }
 
 /* for medium devices */
 @media screen and (max-width: 768px) {
+  .contact .contact-form .col-6,
+  .contact .contact-info-item,
+  .portfolio .portfolio-item,
+  .section .service-item,
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .personal-info
+  {
+    flex:  0 0 100%;
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
