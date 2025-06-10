@@ -1,15 +1,28 @@
-/*=============== Show Menu =============== */
+/*=============== toggle style switcher =============== */
+const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+styleSwitcherToggle.addEventListener("click", () =>{
+  document.querySelector(".style-switcher").classList.toggle("open");
+})
+// hile style switcher 
+window.addEventListener("scroll", () =>{
+  if(document.querySelector(".style-switcher").classList.contains("open"))
+  {
+    document.querySelector(".style-switcher").classList.remove("open");
+  }
+})
 
-/*===== Menu Show =====*/
-/* Validate if constant exists */
-
-/*===== Hide Show =====*/
-/* Validate if constant exists */
-
-/*=============== Remove Menu Mobile =============== */
-
-/*=============== Background Header =============== */
-
-/*=============== Contact Form =============== */
-
-/*=============== Style Switcher =============== */
+/*===============   theme color  =============== */
+const alternateStyles = document.querySelectorAll(".alternate-style");
+function setActiveStyle(color)
+{
+  alternateStyles.forEach((style) =>{
+    if(color === style.getAttribute("title"))
+    {
+      style.removeAttribute("disabled");
+    }
+    else
+    {
+      style.setAttribute("disabled","true");
+    }
+  })
+}
