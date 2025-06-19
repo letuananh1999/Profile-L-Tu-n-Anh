@@ -522,6 +522,24 @@ h3.my-profession
   padding-left: 37px;
   padding-bottom: 50px;
 }
+
+.about .about-content .timeline .timeline-item .timeline-major ,
+.about .about-content .timeline .timeline-item .timeline-position
+{
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-black-900);
+}
+.about .about-content .timeline .timeline-item .timeline-major span,
+.about .about-content .timeline .timeline-item .timeline-position span
+{
+  font-weight: 600;
+  color: var(--text-black-900);
+  margin-left: 4px;
+  display: inline-block;
+}
+.about .about-content .timeline .timeline-item 
+
 .about .about-content .timeline .timeline-item:last-child
 {
   padding-bottom: 0;
@@ -571,6 +589,11 @@ h3.my-profession
   font-size: 16px;
   text-align: justify;
   color: var(--text-black-700);
+}
+.about .about-content .timeline .timeline-text li a
+{
+  font-weight: 600;
+   color: #5271ff ;
 }
 
 
